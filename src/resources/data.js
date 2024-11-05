@@ -607,86 +607,1521 @@ let questions ={
         options: [
 
         ],
-        question : "",
+        question : "What is the correct syntax to define hooks in <code>package.json</code> file in order to configure functionality to be called at a specific point in your application flow or at a specific event?",
         answers:[
-            {option : "", correct: false, isSelected:false},
-            {option : "", correct: false, isSelected:false},
-            {option : "", correct: true, isSelected:false},
-            {option : "", correct: false, isSelected:false},
+            {option : "{\"hooks\": \"./cartridge/scripts/hooks.json\"}", correct: true, isSelected:false},
+            {option : "{\"hooks\": {\"name\":\"dw.ocapi.shop.basket.calculate\", \"script\":\"./hooks\"}}", correct: false, isSelected:false},
+            {option : "A and B are both correct.", correct: true, isSelected:false},
+            {option : "You can't define hooks. This functionality cannot be extended and its purpose it's just for OCAPI.", correct: false, isSelected:false},
         ],
         isAnswered: false
     },
-    46:{
-        approach: "",
-        options: [
-
-        ],
-        question : "",
-        answers:[
-            {option : "", correct: false, isSelected:false},
-            {option : "", correct: false, isSelected:false},
-            {option : "", correct: true, isSelected:false},
-            {option : "", correct: false, isSelected:false},
-        ],
-        isAnswered: false
+    "46": {
+      "approach": "",
+      "options": [],
+      "question": "What is the correct syntax to define hooks in <code>package.json</code> file in order to configure functionality to be called at a specific point in your application flow or at a specific event?",
+      "answers": [
+        {
+          "option": "<code>{\"hooks\": \"./cartridge/scripts/hooks.json\"}</code>",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "b)&nbsp; <code>{\"hooks\": {\"name\":\"dw.ocapi.shop.basket.calculate\", \"script\":\"./hooks\"}}</code>",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "A and B are both correct.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "d)&nbsp;You can't define hooks. This functionality cannot be extended and its purpose it's just for OCAPI.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
     },
-    47:{
-        approach: "",
-        options: [
-
-        ],
-        question : "",
-        answers:[
-            {option : "", correct: false, isSelected:false},
-            {option : "", correct: false, isSelected:false},
-            {option : "", correct: true, isSelected:false},
-            {option : "", correct: false, isSelected:false},
-        ],
-        isAnswered: false
+    "47": {
+      "approach": "",
+      "options": [],
+      "question": "How would you make a variable be persistent during multiple pages for your current Site?",
+      "answers": [
+        {
+          "option": "a)&nbsp;<code>&lt;isset name=\"var\" scope=\"session\"... </code>",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "b)&nbsp; <code>&lt;isset name=\"var\" scope=\"request\"...</code>",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "<code>&lt;isset name=\"var\" scope=\"page\"...</code>",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "<code>&lt;isset name=\"var\" scope=\"site\"...</code>",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
     },
-    48:{
-        approach: "",
-        options: [
-
-        ],
-        question : "",
-        answers:[
-            {option : "", correct: false, isSelected:false},
-            {option : "", correct: false, isSelected:false},
-            {option : "", correct: true, isSelected:false},
-            {option : "", correct: false, isSelected:false},
-        ],
-        isAnswered: false
+    "48": {
+      "approach": "",
+      "options": [],
+      "question": "What would be the expected cache policy for a page that is rendered by another page where its controller has defined <code>cache.applyDefaultCache</code> in his middleware chain? Choose all correct answers that apply.",
+      "answers": [
+        {
+          "option": "Same cache would be applied",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "If this page is rendered by another controller with another cache configuration it would overwrite the previous one.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "If this page is included using <code>&lt;isinclude url=\"\"... /&gt;</code> no cache would be applied.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "It won’t be cached.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
     },
-    49:{
-        approach: "",
-        options: [
-
-        ],
-        question : "",
-        answers:[
-            {option : "", correct: false, isSelected:false},
-            {option : "", correct: false, isSelected:false},
-            {option : "", correct: true, isSelected:false},
-            {option : "", correct: false, isSelected:false},
-        ],
-        isAnswered: false
+    "49": {
+      "approach": "",
+      "options": [],
+      "question": "Cache for stored pages are only invalidated and a new one pulled from the Application Server when:",
+      "answers": [
+        {
+          "option": "The defined caching time is exceeded or a replication is performed",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "b)&nbsp;The merchant triggers an explicit page cache invalidation in Business Manager",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "c)&nbsp;The administrator modifies TTL value to 0 in Administration &gt; Sites &gt; Manage Sites &gt; Cache.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "d)&nbsp;A and&nbsp;B&nbsp;are correct.",
+          "correct": true,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
     },
-    50:{
-        approach: "",
-        options: [
-
-        ],
-        question : "",
-        answers:[
-            {option : "", correct: false, isSelected:false},
-            {option : "", correct: false, isSelected:false},
-            {option : "", correct: true, isSelected:false},
-            {option : "", correct: false, isSelected:false},
-        ],
-        isAnswered: false
+    "50": {
+      "approach": "",
+      "options": [],
+      "question": "What happens if the log size limit is reached?",
+      "answers": [
+        {
+          "option": "A) An email is sent to the administrator account defined in BM.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Old log messages are removed by the new ones.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Logging is suspended until the next day.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Log size limits just exist on sandbox instances.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
     },
-
+    "51": {
+      "approach": "",
+      "options": [],
+      "question": "Imagine your client requested you to send additional information about the client's previous orders. You decide to extend the Controller Order-History to send more data to the view. Is it necessary you replicate the middleware calls exactly?",
+      "answers": [
+        {
+          "option": "a)&nbsp;Yes, otherwise you will get an Error with the text “Params do not match route”.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "b)&nbsp;No, it’s a bad practice because it will execute those middleware twice.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Yes, otherwise you will get an Error with the text Middleware chain can not be completed.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "No, if the original controller has middleware it is better to modify the endpoint.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "52": {
+      "approach": "",
+      "options": [],
+      "question": "Given this code. What would be the expected log file name?<pre class=\"prettyprint linenums\">var Logger = require('dw/system/Logger');\nLogger.getLogger('service', 'recaptcha').error('error message’');</pre>",
+      "answers": [
+        {
+          "option": "a)&nbsp;custom-recaptcha-blade3-1.mon.demandware.net-0-appserver-20210503.log",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "recaptcha-service-blade3-1.mon.demandware.net-0-appserver-20210503.log",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "custom-service-blade3-1.mon.demandware.net-0-appserver-20210503.log",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "error-recaptcha-blade3-1.mon.demandware.net-0-appserver-20210503.log",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "53": {
+      "approach": "",
+      "options": [],
+      "question": "How looks the code that generates this log file and content:<br><pre class=\"prettyprint linenums\">custom-service-blade3-1.mon.demandware.net-0-appserver-20210503.log\nERRORPipelineCallServlet|1726457216|Sites-RefArch-en-Site|Home-Show|PipelineCall|-zOfYSp7z4 custom.recaptcha [] Recaptcha validation failed.</pre><br><br>",
+      "answers": [
+        {
+          "option": "a)&nbsp; <code>var Logger = require('dw/system/Logger'); Logger.getLogger('service', 'recaptcha').error('Recaptcha validation failed');</code>",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "<code>require('dw/system/Logger').getLogger('service').error('Recaptcha validation failed');</code>",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "<code>require('dw/system/Logger').getType('error').msg('Recaptcha validation failed');</code>",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "<code>require('dw/system/Logger').getType('error').msg('Recaptcha validation failed', 'recaptcha');</code>",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "54": {
+      "approach": "",
+      "options": [],
+      "question": "What service type will you select on BM while creating your service to integrate a REST API with encoded form data?",
+      "answers": [
+        {
+          "option": "SOAP Form",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "HTTP",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "HTTP Form",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "REST",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "55": {
+      "approach": "",
+      "options": [],
+      "question": "Which is the correct syntax for passing variable attributes to a log message?",
+      "answers": [
+        {
+          "option": "a)&nbsp;Logger.warn('Content asset with ID {0} is offline', req.querystring.cid);",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "b)&nbsp;Logger.warn('Content asset with ID ' + req.querystring.cid + ' is offline');",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "c)&nbsp;Logger.warn('Content asset with ID ' + JSON.parse(req.querystring.ci+ ' is offline');",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Logger.warnWithParams('Content asset with ID {0} is offline', req.querystring.cid);",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "56": {
+      "approach": "",
+      "options": [],
+      "question": "Which of these topics are true about product bundles…",
+      "answers": [
+        {
+          "option": "a)&nbsp;Are a separate product with its own SKU and price.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Are unaffected by the price of the individual products.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "You can not create a bundle within a bundle.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "d)&nbsp;None of these options.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "e)&nbsp;A and B&nbsp;are correct",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "57": {
+      "approach": "",
+      "options": [],
+      "question": "After configuring the storefront catalog for your site... realize that one of your main categories is not displaying. What could be the reason?",
+      "answers": [
+        {
+          "option": "No search refinement definitions are defined for this category",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Products must be assigned to categories to be shown on the storefront.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Categories must be online in order to be visible.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "d)&nbsp;B and C",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "e)&nbsp;There are no sorting rules assigned to this category.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "58": {
+      "approach": "",
+      "options": [],
+      "question": "How would you find what file is having issues in a call that depends on multiple files and has a few includes?",
+      "answers": [
+        {
+          "option": "Business Manager &gt; Administration &gt; Site development &gt; Development Setup. Access to the log center.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Business Manager &gt; Administration &gt; Site development &gt; Development Setup. Logs browser folder via WebDav.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Merchant Tools &gt; Site Preferences &gt; Logs.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "A and B are correct.",
+          "correct": true,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "59": {
+      "approach": "",
+      "options": [],
+      "question": "How can you add locale-specific images for your site?",
+      "answers": [
+        {
+          "option": "Using custom preferences.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Using custom objects.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Using Business Manager Image Browser.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Uploading image on cartridge static folder.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "e)&nbsp;C&nbsp;and D&nbsp;are correct",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "60": {
+      "approach": "",
+      "options": [],
+      "question": "How can you replicate your sandbox custom preferences to staging and production instances?",
+      "answers": [
+        {
+          "option": "Do changes manually in staging and replicate to production.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Data replication from your sandbox targeting production.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Data replication from your sandbox targeting staging.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Export your sandbox custom preferences and import them to staging and then data replication to production.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "e)&nbsp;A and C&nbsp;are correct",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "f)&nbsp;A&nbsp;and D&nbsp;are correct",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "61": {
+      "approach": "",
+      "options": [],
+      "question": "Is it possible to create custom steps for business manager administration jobs?",
+      "answers": [
+        {
+          "option": "a)&nbsp;Create a steptypes.json file that describes the job step and put the file in the root directory of the cartridge.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Create a customsteps.json file that describes the job step and put the file in the root directory of the cartridge.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Create a steptypes.xml file that describes the job step and put the file in the root directory of the cartridge.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "A and C are both correct.",
+          "correct": true,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "62": {
+      "approach": "",
+      "options": [],
+      "question": "Choose correct process to create a custom step job",
+      "answers": [
+        {
+          "option": "Create a cartridge, create a task oriented module, define a job step in steptypes.json file and upload the cartridge and include it on the cartridge path.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Create cartridge, create chunk oriented common js script, define a job step in steptypes.xml file and upload the cartridge and include it on the cartridge path.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Create a cartridge, create a task oriented module, define a job step in customsteps.json file and upload the cartridge and include it on the cartridge path.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "A and B are correct.",
+          "correct": true,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "63": {
+      "approach": "",
+      "options": [],
+      "question": "After doing the last modifications needed for the homepage you realise that your changes are not being reflected. What could be the reason?",
+      "answers": [
+        {
+          "option": "Quota limit reached.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Code not uploaded to sandbox.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Cache is enabled in your sandbox.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Code not compiled.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "e)&nbsp;A is false",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "64": {
+      "approach": "",
+      "options": [],
+      "question": "What is the correct class to create/instantiate a webservice in Salesforce B2C Commerce Cloud?",
+      "answers": [
+        {
+          "option": "ServiceRegistry",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "LocalServiceRegistry",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "HTTPService",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "HTTPServiceRegistry",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "65": {
+      "approach": "",
+      "options": [],
+      "question": "Your service needs to have a mock call configured for testing. How can you do it?",
+      "answers": [
+        {
+          "option": "Custom site preference with boolean value.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Extend LocalServiceRegistry System object to add mock value.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Enable service mode Mocked and add mockCall attribute to ServiceCallback.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "All answers are incorrect.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "66": {
+      "approach": "",
+      "options": [],
+      "question": "How can you handle service call exceptions?",
+      "answers": [
+        {
+          "option": "Implement parseExeception method in ServiceCallback.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Add try-catch block in parseResponse method in ServiceCallback.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Call .setThrowOnError when calling the service to throw a JavaScript error if the result status is not OK",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Service call doesn’t throw exceptions by default if you don’t enable exception breaker on service profile config.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "67": {
+      "approach": "",
+      "options": [],
+      "question": "Every time your customers log in your storefront a request using webservice framework is made to 3rd party application. What type of service should you implement in order to perform those requests in real time?",
+      "answers": [
+        {
+          "option": "HTTP service type",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "HTTP FORM service type",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "A and B are correct.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "All answers are incorrect.",
+          "correct": true,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "68": {
+      "approach": "",
+      "options": [],
+      "question": "What is the correct syntax to include content assets using a controller call?",
+      "answers": [
+        {
+          "option": "ContentMgr.getContent(id : String) : Content",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "AssetMgr.getContent(id : String) : Content",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Content.getAsset(id : String) : Content",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "ContentMgr.getAsset(id : String) : Content",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "69": {
+      "approach": "",
+      "options": [],
+      "question": "Which modules can be used to display images on the storefront?",
+      "answers": [
+        {
+          "option": "Content Slots",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Content Assets",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "ISML template",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Content Library",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "e)&nbsp;D&nbsp;is not correct",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "70": {
+      "approach": "",
+      "options": [],
+      "question": "What can you import at Merchant Tools &gt; Content &gt; Import &amp; Export?",
+      "answers": [
+        {
+          "option": "Catalogs, Pricebooks &amp; Inventory lists",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Libraries",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Images, Content Assets and folders",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Customers, Libraries and Custom Objects.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "71": {
+      "approach": "",
+      "options": [],
+      "question": "Which is the correct syntax to include a content asset inside the body of another content asset?",
+      "answers": [
+        {
+          "option": "$link-page:cid=ABOUT_US$",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "$include('Page-Show', 'cid', 'ABOUT_US')$",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "$url('Page-Show', 'cid', 'ABOUT_US')$",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "$httpUrl('Page-Show', 'cid', 'ABOUT_US')$",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "72": {
+      "approach": "",
+      "options": [],
+      "question": "Which is the correct syntax to use $url$ with parameters inside content assets?",
+      "answers": [
+        {
+          "option": "$url(' &lt;pipeline&gt;' [, '&lt;key1&gt;', '&lt;value1&gt;', '&lt;key2&gt;', '&lt;value2&gt;', ...])$",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "$url(' &lt;pipeline&gt;' [, 'cid', '&lt;value1&gt;'])$",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "$url(' &lt;type&gt;[:key1=value1;key2=value2; ...])$",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "None of the above are correct.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "73": {
+      "approach": "",
+      "options": [],
+      "question": "Which is the correct syntax to use $include$ and what is the purpose of?",
+      "answers": [
+        {
+          "option": "$include(' &lt;pipeline&gt;' [, '&lt;key1&gt;', '&lt;value1&gt;', '&lt;key2&gt;', '&lt;value2&gt;', ...])$ - Can be used to include the result of another server call.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "$include(' &lt;pipeline&gt;' [, '&lt;key1&gt;', '&lt;value1&gt;', '&lt;key2&gt;', '&lt;value2&gt;', ...])$ - Calls the Link pipeline in the Reference Application to call pipelines.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "$include('&lt;pipeline&gt;' [, 'cid', '&lt;value1&gt;'])$ - Can be used to include the result of another server call.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "$include('&lt;type&gt;[:key1=value1;key2=value2; ...])$ - Calls the Link pipeline in the Reference Application to call pipelines.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "74": {
+      "approach": "",
+      "options": [],
+      "question": "In which situation would you use $url$ over $include$?",
+      "answers": [
+        {
+          "option": "When you need to create an absolute URL that retains the protocol of the outer request.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "When you need to include the result of another server call.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "When you need to create an absolute URL, but with the https protocol.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "When you need to create an absolute URL, but with the http protocol.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "75": {
+      "approach": "",
+      "options": [],
+      "question": "In the production instance you have two pricebooks and two catalogs from two different sites that need to be imported once a month. Which steps do you follow to import and build them?",
+      "answers": [
+        {
+          "option": "Create two jobs that will import the pricebooks, catalogs and rebuild indexes.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Create one job with parallel flow that will import the pricebooks, catalogs and rebuild indexes for each site.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Do it manually, because it is just once a month.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Go to BM &gt; Administrator &gt; Site Development &gt; Site import &amp; Export and import the catalog and pricebooks.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "76": {
+      "approach": "",
+      "options": [],
+      "question": "In your site you have a master catalog with all products available for the current site, but not all of them are assigned to the storefront catalog. How would you do an export with just products assigned to the storefront catalog?",
+      "answers": [
+        {
+          "option": "Merchant Tools &gt; Product &amp; Catalogs &gt; Import &amp; Export &gt; Export the storefront catalog for current site.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Merchant Tools &gt; Online Marketing &gt; Import &amp; Export &gt; Export the storefront catalog for current site.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Administration &gt; Site Development &gt; Site Import &amp; Export &gt; Export Catalogs &gt; Select storefront catalog for current site.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "A and C are both correct.",
+          "correct": true,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "77": {
+      "approach": "",
+      "options": [],
+      "question": "You are about to perform a master catalog import in your sandbox. What kind of import mode will you execute in order to update the master catalog and add new products to the existing one?",
+      "answers": [
+        {
+          "option": "UPDATE",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "MERGE",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "REPLACE",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "B and C are correct.",
+          "correct": true,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "78": {
+      "approach": "",
+      "options": [],
+      "question": "Which command would you run from package.json in order to compile all your code?",
+      "answers": [
+        {
+          "option": "npm run build",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "npm run compile",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "npm run build:all",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "npm run compile:all",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "79": {
+      "approach": "",
+      "options": [],
+      "question": "What kind of configurations are needed in order to extend the Business Manager?",
+      "answers": [
+        {
+          "option": "Create needed extension points on the bm_extensions.xml file.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Create a custom cartridge and assign it on the Business Manager cartridge path (Administration &gt; Sites &gt; Manage Sites &gt; Manage the Business Manager site &gt; Cartridge Path).",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Business Manager can’t be extended.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Create a custom cartridge and assign it on the Business Manager cartridge path (Administration &gt; Site Development &gt; Development Setup &gt; Cartridge Path).",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "80": {
+      "approach": "",
+      "options": [],
+      "question": "How can you export a function inside of a controller?",
+      "answers": [
+        {
+          "option": "module.exports = server.exports();",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "server.exports = module.exports();",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "server.append = module.exports();",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "server.get = module.exports();",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "81": {
+      "approach": "",
+      "options": [],
+      "question": "How can you retrieve a form named formName?",
+      "answers": [
+        {
+          "option": "server.forms['formName']",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "session.forms['formName']",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "A and B are both correct",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "None of the above are correct.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "82": {
+      "approach": "",
+      "options": [],
+      "question": "What is the correct syntax to call the next method inside a controller?",
+      "answers": [
+        {
+          "option": "return next();",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "next();",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "this.emit('route:Complete', req, res); return;",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "return;",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "83": {
+      "approach": "",
+      "options": [],
+      "question": "Which methods can validate CSRF tokens?",
+      "answers": [
+        {
+          "option": "validateRequest();",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "validateAjaxRequest();",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "checkToken();",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "A and B are both correct",
+          "correct": true,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "84": {
+      "approach": "",
+      "options": [],
+      "question": "What type of data do you send from a Controller to the view?",
+      "answers": [
+        {
+          "option": "JSON",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Javascript Object",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Javascript Function",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Middleware",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "85": {
+      "approach": "",
+      "options": [],
+      "question": "What controller do you have to call if you need an anchor text to the homepage?",
+      "answers": [
+        {
+          "option": "Home-Start",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Homepage-Show",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Default-Start",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Home-Show",
+          "correct": true,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "86": {
+      "approach": "",
+      "options": [],
+      "question": "How can you override an existing controller in order to modify some values before current existing code is executed?",
+      "answers": [
+        {
+          "option": "Replace current controller and add needed logic using server.replace",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Appending needed data with server.append",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Create a new controller and implement needed behaviour.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Prepending needed data with server.prepend",
+          "correct": true,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "87": {
+      "approach": "",
+      "options": [],
+      "question": "What is the correct syntax to render a template inside a Controller?",
+      "answers": [
+        {
+          "option": "res.render('home/homePage');",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "require('dw/template/ISML').renderTemplate('home/homePage');",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "response.renderTemplate('home/homePage');",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "ISML.renderTemplate('home/homePage');",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "88": {
+      "approach": "",
+      "options": [],
+      "question": "What is the purpose of the keyword superModule in the SFRA controller context?",
+      "answers": [
+        {
+          "option": "Inherits the existing server object and extends it with a list of new routes from the super module.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Allows the middleware chain to inherit parent controller functionality.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Imports functionality from the first controller with the same name and location found to the right of the current cartridge on the cartridge path.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "B and C are both correct.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "89": {
+      "approach": "",
+      "options": [],
+      "question": "How can you check the time a controller needs to perform some request?",
+      "answers": [
+        {
+          "option": "By adding in the current controller the profiler class to track spended times.<code>require('dw/system/Profiler').start() and require('dw/system/Profiler').stop()</code>",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Using code profiler in Business Manager.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Using the script debugger.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Adding setTimeout JS function inside the controller.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "90": {
+      "approach": "",
+      "options": [],
+      "question": "How can you send data from the Controller to the rendered view?",
+      "answers": [
+        {
+          "option": "response.setData({...});",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "res.setViewData({...});",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "res.render('...', {...});",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "res.setData({...});",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "e)&nbsp;B and C&nbsp;are correct",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "91": {
+      "approach": "",
+      "options": [],
+      "question": "Check this code and determine why viewData can’t be debugged:<br><pre class=\"prettyprint linenums\">server.get('HelloWorld', function(req, res, next) {\n     viewData = res.getViewData();\n     ...\n});</pre>",
+      "answers": [
+        {
+          "option": "viewData can’t be debugged.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "viewData just should be retrieved by calling res.getData();",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "viewData is not declared.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "B and C are both correct.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "92": {
+      "approach": "",
+      "options": [],
+      "question": "In which scenario would you use Pipeline Profiler against Code Profiler?",
+      "answers": [
+        {
+          "option": "When you need to test the performance of a specific Controller.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "When you are testing the performance of the whole Site and trying to identify bottlenecks.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "You can use both for the same purpose. The unique difference is the way how results are shown.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "When you need to test the performance of jobs.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "93": {
+      "approach": "",
+      "options": [],
+      "question": "On the storefront the user address being displayed is incorrect, it belongs to another customer.How to investigate the root cause?",
+      "answers": [
+        {
+          "option": "Check application logs.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Add breakpoints in JS files",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Adding Logging to Your Scripts",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "All the above are correct.",
+          "correct": true,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "94": {
+      "approach": "",
+      "options": [],
+      "question": "You have a form used in site A. For your site B you’re using the same form but you need to change a form label. How can you do it?",
+      "answers": [
+        {
+          "option": "Create a new ISML file.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Create a new FORM with a new label.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Create a new property file with a custom label for site B.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Overwrite forms.properties file with new label.",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "95": {
+      "approach": "",
+      "options": [],
+      "question": "What is the folder hierarchy where locale files should be placed for forms to be used by multiple locales or countries.",
+      "answers": [
+        {
+          "option": "resources/templates/*.properties",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "templates/default/*.properties",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "templates/resources/*.properties",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "resources/forms/*.properties",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "96": {
+      "approach": "",
+      "options": [],
+      "question": "How can you include different address fields, such as state or province, depending on the country for your site forms? You can create different form definitions for each locale… but in which folder hierarchy?",
+      "answers": [
+        {
+          "option": "cartridge/templates/resources/forms/*.xml",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "cartridge/forms/default/*.xml",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "cartridge/resources/forms/*.xml",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "cartridge/templates/resources/forms.xml",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    },
+    "97": {
+      "approach": "",
+      "options": [],
+      "question": "Salesforce B2C Commerce forms can have validations by",
+      "answers": [
+        {
+          "option": "Attributes",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Form Groups",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Functions",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Form Actions",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "A&nbsp;and B are correct",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "A&nbsp;and C are correct",
+          "correct": false,
+          "isSelected": false
+        }
+      ],
+      "isAnswered": false
+    }
 }
 
 export default  {questions}
