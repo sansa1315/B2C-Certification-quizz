@@ -442,7 +442,7 @@ let questions ={
         answers:[
             {option : "templates/de", correct: false, isSelected:false},
             {option : "templates/default", correct: false, isSelected:false},
-            {option : "templates/resources", correct: false, isSelected:false},
+            {option : "templates/resources", correct: true, isSelected:false},
             {option : "templates/default/resources", correct: false, isSelected:false},
         ],
         isAnswered: false
@@ -2119,6 +2119,716 @@ let questions ={
           "correct": false,
           "isSelected": false
         }
+      ],
+      "isAnswered": false
+    },
+    "98": {
+      "approach": "The following sample code is NOT providing the desired results. The Digital Developer needs to add an entry to the logs to debug the problem.",
+      "options": [],
+      "question": "Which statement correctly adds a log entry?",
+      "answers": [
+        {
+          "option": "Logger.exception(‘Unable to find Apple Pay payment instrument for order.‘+paymentInstruments);",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Logger.getErrorLog().log(‘Unable to find Apple Pay payment instrument for order.‘+paymentInstruments);",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Logger.fault(‘Unable to find Apple Pay payment instrument for order.‘+paymentInstruments)",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Logger.error(‘Unable to find Apple Pay payment instrument for order.‘+paymentInstruments);",
+          "correct": true,
+          "isSelected": false
+        }        
+      ],
+      "isAnswered": false
+    },
+    "99": {
+      "approach": "",
+      "options": [],
+      "question": "Which three techniques improve client-side performance in production while following documented best practices? (Choose three.)",
+      "answers": [
+        {
+          "option": "Use one style sheet for each ISML decorator template.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Place CSS outside of templates.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Compress CSS",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Use inline Javascript.",
+          "correct": true,
+          "isSelected": false
+        },        
+        {
+          "option": "Combine several images into a single image.",
+          "correct": true,
+          "isSelected": false
+        }        
+      ],
+      "isAnswered": false
+    },
+    "100": {
+      "approach": "A Digital Developer needs to add logging to the following code:",
+      "options": [],
+      "question": "Which statement logs the HTTP status code to a debug-level custom log file?",
+      "answers": [
+        {
+          "option": " logger.getLogger(‘profile’).debug('Error retrieving profile email, Status Code: ', http.statusCode);",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": " logger.debug('Error retrieving profile email, Status Code: {0} was returned.', http.statusCode);",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Logger.getLogger().debug('Error retrieving profile email, Status Code: {0} was returned.', http.statusCode);",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Logger.getLogger(‘profile’).debug('Error retrieving profile email, Status Code: {0} was returned.', http.statusCode)",
+          "correct": true,
+          "isSelected": false
+        }                       
+      ],
+      "isAnswered": false
+    },
+    "101": {
+      "approach": "",
+      "options": [],
+      "question": "Which three object types can a developer import using the Merchant Tools > Content > Import & Export module in Business Manager? (Choose three.)",
+      "answers": [
+        {
+          "option": "Content slots",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Images and other static assets",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Products",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Folders",
+          "correct": true,
+          "isSelected": false
+        },                       
+        {
+          "option": "Content assets",
+          "correct": true,
+          "isSelected": false
+        }                       
+      ],
+      "isAnswered": false
+    },
+    "102": {
+      "approach": "Universal Containers recently completed updates to their storefront shopping cart page. A problem has been discovered since the update. Users are no longer able to submit coupon codes on this page. Additionally, authenticated users who try to add a coupon are logged out. The following processing code is found in the Cart.js controller file:",
+      "options": [],
+      "question": "What should the Developer verify to identify the issue?",
+      "answers": [
+        {
+          "option": "The CSRF cartridge is included in the site’s cartridge path.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "The form group has the secure attribute set to true.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "The CSRF token is present in the form and is being submitted in the request.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "The CSRF settings in Business Manager are properly configured.",
+          "correct": false,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "103": {
+      "approach": "",
+      "options": [],
+      "question": "A Digital Developer wants to selectively retrieve products and process them from an iPhone. Which action should the Developer take, given that JavaScript controllers CANNOT be used?",
+      "answers": [
+        {
+          "option": "Use import/export in Business Manager.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Create a webservice to retrieve products.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Use OCAPI and invoke it in native language.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Use WebDAV Client to retrieve products.",
+          "correct": false,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "104": {
+      "approach": "",
+      "options": [],
+      "question": "A Digital Developer must give users the ability to choose an occasion (holiday, birthday, anniversary, etc.) for which gifts are currently being selected. The data needs to be persistent throughout the current shopping experience. Which data store variable is appropriate, assuming there is no need to store the selection in any system or custom objects?",
+      "answers": [
+        {
+          "option": "Request scope variable",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Page scope variable",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Session scope variable",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Content slot variable",
+          "correct": false,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "105": {
+      "approach": "",
+      "options": [],
+      "question": "A Digital Developer suspects a logical error in a script. Which action will help locate the error?",
+      "answers": [
+        {
+          "option": "Submit a support ticket to B2C Commerce.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Check request logs for evidence of the logical error.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Put breakpoints in the code, debug, and examine variable values.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Print all values in the script node called before the current script.",
+          "correct": false,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "106": {
+      "approach": "",
+      "options": [],
+      "question": "Once the Cache Information tool of the storefront toolkit is enabled, how can a Digital Developer view caching information for a particular component of the page?",
+      "answers": [
+        {
+          "option": "Hover over the caching icons now present on the storefront.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Open the Request Logs to view the caching information.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Start a pipeline debugging session and view the caching information provided",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Right-click on the component in UX Studio and view the caching properties of the file",
+          "correct": false,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "107": {
+      "approach": "A Digital Developer is working in a sandbox on a site named test-site using the domain test.demandware.net. The Developer needs to compile a url to make an Open Commerce API (OCAPI) request that returns product information.",
+      "options": [],
+      "question": "By default, which URL format is a proper Open Commerce API for Sandbox?",
+      "answers": [
+        {
+          "option": "https://test.demandware.com/dw/shop/products/M1355?client_id=aaa...",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "https://www.test.com/s/test-site/sfc/shop/products/M1355?client_id=aaa.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "https://test.demandware.net/s/test-site/dw/shop/v18_3/products/M1355?client_id=aaa.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "https://www.test.com/dw/shop/v18_3/products/M1355?client_id=aaa.",
+          "correct": false,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "108": {
+      "approach": "A Digital Developer needs to add a new form to the shopping cart page to allow customers to enter their rewards pass ID. There is already an existing Cart.js controller that handles processing of the other cart forms. In addition, a form field node is in the form XML and the necessary form input is present in the ISML template. The code below is the submit button for the ISML markup.",
+      "options": [],
+      "question": "By default, which URL format is a proper Open Commerce API for Sandbox?",
+      "answers": [
+        {
+          "option": "Option A",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Option B",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Option C",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Option D",
+          "correct": false,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "109": {
+      "approach": "",
+      "options": [],
+      "question": "Universal Containers is preparing their storefront to use Open Commerce APIs (OCAPI). To which hook should the Digital Developer move taxation logic to ensure consistent order totals within B2C Commerce?",
+      "answers": [
+        {
+          "option": "dw.ocapi.shop.order.validateOrder",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": " dw.ocapi.shop.basket.calculate",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "dw.ocapi.shop.basket.afterPostShipment",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "dw.ocapi.shop.order.afterPOST",
+          "correct": false,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "110": {
+      "approach": "A digital instance has one site, with one master product catalog separate from the site catalog. Some, but NOT all, products in the master catalog are assigned to categories of the site catalog.",
+      "options": [],
+      "question": "Using Business Manager, how can a Digital Developer create a catalog export file that contains only the products assigned to the site catalog?",
+      "answers": [
+        {
+          "option": "Use the Catalog Export module to export the site catalog.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Use the Catalog Export module to export the master catalog, with a category-assignment search to export specific products.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Use the Site Import & Export module to export both the site catalog and the master catalog in a single archive.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Use the Site Import & Export module to export the master catalog, filtered by site catalog categories to export specific products.",
+          "correct": false,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "111": {
+      "approach": "A Digital Developer is asked to optimize controller performance by lazy loading scripts as needed instead of loading all scripts at the start of the code execution.",
+      "options": [],
+      "question": "Which statement should the Developer use to lazy load scripts?",
+      "answers": [
+        {
+          "option": "importPackage () method",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "$.ajax () jQuery method",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "local include",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "require () method",
+          "correct": true,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "112": {
+      "approach": "A Digital Developer is inspecting the weekly service status report for a critical internally-hosted web service used in the application and notices that there are too many instances of unavailability.",
+      "options": [],
+      "question": "Which two solutions are possible options to reduce the unavailability of the service? (Choose two.)",
+      "answers": [
+        {
+          "option": "Modify the code that makes the request to the external service to be wrapped in a try / catch block.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Change the code that makes the request to set the throwOnError attribute, of the service, to be true",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Increase the web service time out.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Update the external service to have a faster response time.",
+          "correct": false,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "113": {
+      "approach": "A job executes a pipeline that makes calls to an external system.",
+      "options": [],
+      "question": "Which two actions prevent performance issues in this situation? (Choose two.)",
+      "answers": [
+        {
+          "option": "Use synchronous import or export jobs",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Configure a timeout for the script pipelet.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Disable multi-threading.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Use asynchronous import or export jobs.",
+          "correct": false,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "114": {
+      "approach": "Universal Containers sells physical gift cards for the holidays.",
+      "options": [],
+      "question": "What needs to occur to guarantee the cards will always be available?",
+      "answers": [
+        {
+          "option": "Create an inventory record with an unlimited Allocation value.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Create an inventory record with an extremely high Allocation value (i.e., 1 billion certificates).",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Create a perpetual inventory record.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Create an inventory record with Backorder Handling enabled.",
+          "correct": false,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "115": {
+      "approach": "Universal Containers wants to associate a region code value with an order to indicate the general area of its destination. This region code must be accessible whenever the order history is displayed.",
+      "options": [],
+      "question": "What is required to accomplish this?",
+      "answers": [
+        {
+          "option": "Store the region code value in a session variable",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Define a custom attribute on the Order system object type to store the region code value.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Define a custom object type to store the username with the region code.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Store the region code value in the geolocation system attribute of the Order.",
+          "correct": false,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "116": {
+      "approach": "A Digital Developer is requesting product information for an external integration. The following Open Commerce API (OCAPI) request is NOT functioning correctly:",
+      "options": [],
+      "question": "How should the Developer change the request?",
+      "answers": [
+        {
+          "option": "Change the URI to /dw/shop/v18_3/products/creative-zen-v.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Change the HTTP method to PUT.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Change the HTTP method to GET.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Include an authentication token in the request.",
+          "correct": false,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "117": {
+      "approach": "A Digital Developer has been given a requirement to add fault tolerance to an existing web service integration that uses Service Framework. Administrators at Universal Containers need to be able to configure the timeout and rate limiting.",
+      "options": [],
+      "question": "Which approach should the Developer use to implement the requirement?",
+      "answers": [
+        {
+          "option": " Implement a ServiceUnavailableException exception handler to execute fallback code",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": " Implement a condition that checks to see if the response was empty and execute fallback code if true.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Create a site preference to store timeout settings and implement an IOException handler to execute fallback code",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Use the setTimeout method to execute fallback code if the request has NOT completed.",
+          "correct": false,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "118": {
+      "approach": "A Digital Developer noticed that cartridges in their workspace are NOT executing. The Developer confirms that the cartridges are uploaded to the B2C Commerce server connection’s target version directory.",
+      "options": [],
+      "question": "Which action potentially solves this problem?",
+      "answers": [
+        {
+          "option": "Set the active code version to use the latest compatibility mode.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Remove invalid characters from the code version’s name.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Remove invalid characters from cartridge file and folder names.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Set the server connection’s target version directory to the active code version.",
+          "correct": true,
+          "isSelected": false
+        }                                                      
+      ],
+      "isAnswered": false
+    },
+    "119": {
+      "approach": "A Digital Developer is implementing an Open Commerce API call to add products to a basket. Given the following resource configuration:",
+      "options": [],
+      "question": "Which modification allows the requests to successfully execute?",
+      "answers": [        
+        {
+          "option": "Change the 'resource_id' value to: '/baskets/*/items'.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Change the 'write_attributes' value to: '(+items)'.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Change the 'read_attributes' value to: '(items)'.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "Change the 'methods' value to: ['get', 'post'].",
+          "correct": true,
+          "isSelected": false
+        },                                                      
+      ],
+      "isAnswered": false
+    },
+    "120": {
+      "approach": "",
+      "options": [],
+      "question": "Which two methods are efficient and scalable? (Choose two.)",
+      "answers": [        
+        {
+          "option": "ProductMgr.queryAllSiteProducts()",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "ProductSearchHit.getRepresentedProducts()",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "ProductSearchModel.getProductSearchHits()",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "Category.getProducts()",
+          "correct": false,
+          "isSelected": false
+        },                                                      
+      ],
+      "isAnswered": false
+    },
+    "121": {
+      "approach": "Universal Containers calls the following combination of products “The Basics” and sells the combination as a unique product ID:",
+      "options": [],
+      "question": "The Developer created these three products in the catalog. What is the next step in Business Manager to create “The Basics” as a combination?",
+      "answers": [        
+        {
+          "option": " In the Product Bundles module, create a bundle named “The Basics”.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "In the Products module, create a product named “The Basics” and add the products to the Product Bundles tab.",
+          "correct": true,
+          "isSelected": false
+        },
+        {
+          "option": "In the Products module, create a product named “The Basics” and add the products to the Product Sets tab.",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "In the Product Sets module, create a product set named “The Basics”.",
+          "correct": false,
+          "isSelected": false
+        },                                                      
+      ],
+      "isAnswered": false
+    },
+    "122": {
+      "approach": "",
+      "options": [],
+      "question": "A Digital Developer extends a system object, Product, and adds a Boolean attribute, “sellable,” to it. Assuming “prod” is the variable name handling the product, what code can the Developer use to access it?",
+      "answers": [        
+        {
+          "option": "prod.extended.sellable",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "prod.sellable",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "prod.persistable.sellable",
+          "correct": false,
+          "isSelected": false
+        },
+        {
+          "option": "prod.custom.sellable",
+          "correct": true,
+          "isSelected": false
+        },                                                      
       ],
       "isAnswered": false
     }
