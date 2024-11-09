@@ -19,7 +19,12 @@
     <div class="d-flex" v-for="answers, i in data.questions[renderedQuestionNumber[index - 1]]?.answers" :key="i">
         <span>{{vocals[i]}}</span>
         <div class="form-check ml-1" :class="{'green': answers.isSelected && answers.correct || !answers.isSelected && answers.correct && data.questions[renderedQuestionNumber[index - 1]].isAnswered, 'red': answers.isSelected && !answers.correct}" >
-            <input class="form-check-input" :value="i"  type="radio" :checked="answers.isSelected" v-model="selectedOption" :disabled="data.questions[renderedQuestionNumber[index - 1]]?.isAnswered">
+            <div v-if="answers.isMultiple">
+                <input class="form-check-input" :value="i"  type="checkbox" :checked="answers.isSelected" v-model="selectedOption" :disabled="data.questions[renderedQuestionNumber[index - 1]]?.isAnswered">
+            </div>
+            <div v-else>
+                <input class="form-check-input" :value="i"  type="radio" :checked="answers.isSelected" v-model="selectedOption" :disabled="data.questions[renderedQuestionNumber[index - 1]]?.isAnswered">
+            </div>
             <label class="form-check-label">
                 {{answers.option}}
             </label>
