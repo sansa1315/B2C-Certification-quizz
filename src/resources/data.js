@@ -216,9 +216,9 @@ let questions ={
         ],
         question : "Which tool should the developer start with to identify the issue?",
         answers:[
-            {option : "Storefront Toolkit", correct: true},
-            {option : "Reports and Dashboards module", correct: false},
-            {option : "Pipeline Profiler", correct: false},
+            {option : "Storefront Toolkit", correct: true, isSelected:false},
+            {option : "Reports and Dashboards module", correct: false, isSelected:false},
+            {option : "Pipeline Profiler", correct: false, isSelected:false},
         ],
         "isAnswered": false,
 "isMultiple" : false
@@ -3459,12 +3459,12 @@ let questions ={
   "answers": [
     {
       "option": "{ “hooks”: “./cartridge/scripts/hooks.json” }",
-      "correct": false,
+      "correct": true,
       "isSelected": false
     },
     {
       "option": "{ “hooks”: “./scripts/hooks.json” }",
-      "correct": true,
+      "correct": false,
       "isSelected": false
     },
     {
@@ -4607,7 +4607,7 @@ let questions ={
   "isAnswered": false,
   "isMultiple": true
 },
-"108": {
+"179": {
   "approach": "",
   "options": [],
   "question": "Which three configuration does a developer need to ensure to have a new product visible in the Storefront? (Choose 3 answers)",
@@ -4641,7 +4641,7 @@ let questions ={
   "isAnswered": false,
   "isMultiple": true
 },
-"109": {
+"180": {
   "approach": "",
   "options": [],
   "question": "Which two items are appropriate content of custom logs implemented at checkout? (Choose 2 answers)",
@@ -4670,7 +4670,7 @@ let questions ={
   "isAnswered": false,
   "isMultiple": true
 },
-"110": {
+"181": {
   "approach": "",
   "options": [],
   "question": "A developer is writing a server side script that needs to maintain state across calls. The persistent information needed includes these items: • The current customer • Whether or not the customer is authenticated • The privacy attributes (such as tracking consent or cookie policy). Which technique should the developer use to maintain state in an efficient and scalable manner that follows best practice?",
@@ -4699,7 +4699,7 @@ let questions ={
   "isAnswered": false,
   "isMultiple": false
 },
-"111": {
+"182": {
   "approach": "",
   "options": [],
   "question": "A developer working on a simple web service integration is asked to add appropriate logging to allow future troubleshooting. According to logging best practices, which code should the developer write to log when an operation succeeds, but has an unexpected outcome that may produce side effects?",
@@ -4728,7 +4728,7 @@ let questions ={
   "isAnswered": false,
   "isMultiple": false
 },
-"112": {
+"183": {
   "approach": "",
   "options": [],
   "question": "Which three operations should be done in a controller? (Choose 3 answers)",
@@ -4762,7 +4762,7 @@ let questions ={
   "isAnswered": false,
   "isMultiple": true
 },
-"113": {
+"184": {
   "approach": "",
   "options": [],
   "question": "A Storefront is designed so that multiple pages share a common header and footer layout. Which ISML tag should a developer use on the templates for these pages to avoid code repetition in the most effective way?",
@@ -4791,7 +4791,7 @@ let questions ={
   "isAnswered": false,
   "isMultiple": false
 },
-"114": {
+"185": {
   "approach": "",
   "options": [],
   "question": "A retailer notices that the Account Addresses page is showing the wrong shopper’s address. Which tool should the developer start with to identify the issue?",
@@ -4820,7 +4820,7 @@ let questions ={
   "isAnswered": false,
   "isMultiple": false
 },
-"115": {
+"186": {
   "approach": "A client has two B2C Commerce sites in the same instance: one for the U.S market, the other for the European market. The products they make are sold with different safety certificates based-on the world location. For example, they sell a smartphone with certificate A in the U.S and certificate B in Europe, a hairdryer with certificate C in the U.S and certificate D in Europe, and more. ",
   "options": [],
   "question": "How should a developer allow the merchant to display the appropriate certification logo in the produce to details page, depending on the customer’s location? ",
@@ -4845,6 +4845,491 @@ let questions ={
       "correct": false,
       "isSelected": false
     }
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"187": {
+  "approach": "",
+  "options": [],
+  "question": "Which item is appropriate content for custom logs implemented at checkout?",
+  "answers": [
+    {
+      "option": "Order failure information",
+      "correct": true,
+      "isSelected": false
+    },  
+    {
+      "option": "Transaction's credit card information",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "Customer's password at post-checkout sign-up",
+      "correct": false,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"188": {
+  "approach": "A developer needs to perform the same additional checks before completing multiple routes in custom controller, in order to decide whether to render a template or redirect the user to a different page.",
+  "options": [],
+  "question": "According to SFRA best practices, what is the correct approach to improve code reusability in this scenario?",
+  "answers": [
+    {
+      "option": "Append a new function to all the existing routes with the server module",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "Define a new middleware function and use it In the exlstlng routes.",
+      "correct": true,
+      "isSelected": false
+    },
+    {
+      "option": "use the superNoduIe property in the existing routes to extend their functionality.",
+      "correct": false,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"189": {
+  "approach": "Given the requirements:",
+  "options": ["•	To integrate with an external web service using HITP requests", "•	•	To create a service for this purpose With the Service  framework using the Loc—IServiceRegistry class", "•	To test the service before the external service provider makes the API available"],
+  "question": "Which solution allows the developer to satisfy the requirements?",
+  "answers": [
+    {
+      "option": "Create a servlce and e Sltepreference that Induce the service to respond With a mock response using a conditional.",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "Create a service and implement the mockFuII callback and a sitepreference to enable or disable the mock response.",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "Create a service and Implement the mockFull callback and set the service mode to mock.",
+      "correct": true,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"190": {
+  "approach": "",
+  "options": [],
+  "question": "Given the following Open Commerce API (OCAPI) definitions, which permission or permissions apply?",
+  "answers": [
+    {
+      "option": "Allows external applications to create coupons",
+      "correct": true,
+      "isSelected": false
+    },  
+    {
+      "option": "Allows external applications to create, update, and delete coupons",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "Allow external applications to create, update, and delete both coupons end coupon codes",
+      "correct": false,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"191": {
+  "approach": "A developer implements the necessary code for a new page Designer component",
+  "options": [],
+  "question": "What is the purpose Of the JSON metadata definition file the  developer creates?",
+  "answers": [
+    {
+      "option": "It defines the business and rendering logic Of the component required by the merchant",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "It defines the responsive layout of the rendered template",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "It defines regions within the component type",
+      "correct": true,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"192": {
+  "approach": "A developer customized the Cart-Show controller route with  LINK cartridge that adds soclel medla data. There is a new requirement to add a dateLayer object to the Cert-Show controller route",
+  "options": [],
+  "question": "How should the developer achieve this to ensure that no code change will be needed if the client decides to remove the LINK cartridge ?",
+  "answers": [
+    {
+      "option": "Append Cart-Show controller route in the client cartridge and add dataLeyer object to the vlewData variable",
+      "correct": true,
+      "isSelected": false
+    },  
+    {
+      "option": "Replace the Cart-Show controller route in client cartridge ane add datal-Byer Object to the viewData variable. Ensure that the client cartridge is on the left of the LINK cartridge in cartridge path",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "Replace the Cart-Show controller reute In 'Ilene cartridge and add dat2Layer Object to the ViewData variable.",
+      "correct": false,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"193": {
+  "approach": "The developer created new Storefront category in storefrontcatalog-m-en, but when viewing the Storefront site, the category isn't vlslble",
+  "options": [],
+  "question": "Which reason might explain Why the category isn't Visible?",
+  "answers": [
+    {
+      "option": "The categories are not sorted",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "The Storefront catalog Is offline",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "The category doesn't contain avallable products",
+      "correct": true,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"194": {
+  "approach": "A developer has a sandbox with code to log a message during execution, and the following code:",
+  "options": [],
+  "question": "After the code executes, the developer doesrft see any log file With the message in the WebDAV folder. What should the developer do to correct this issue?",
+  "answers": [
+    {
+      "option": "Set the logging global preference to true AND check the box for Info under Log Files. ",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "Set the logging global preference to true AND set the root log level to debug",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "Set the root log level to debug AND check the box for Info under Log Files",
+      "correct": true,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"195": {
+  "approach": "The developer has been given the following business requirement",
+  "options": ["•	The shipping method, 'Free Standard Ground Shipping' has an exclusion for products with 'category equals or Is child Of electronics-televisions.'", "•	The marketing department has scheduled sale offering  'Free Standard Ground Shipping' method for brand XyzTv televisions for the next 3 months."],
+  "question": "What method accomplishes this While following best practices?",
+  "answers": [
+    {
+      "option": "Extend the code In cartridge/models/shi pping/sh ipping Meth js using module.superModuIe and add an exception for the specified brand.",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "Extend the CheckoutShippingServices controller using module-super-Module and add an exception for the speclfled brand,",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "Create an allow list for the existing shipping method by adding a product exclusion for 'brand equals Xy2Tv' to the exclusion list for 'Free Standard Ground Shipping'.",
+      "correct": true,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"196": {
+  "approach": "Below is a form definition snippet from the newsletter.xml file",
+  "options": [],
+  "question": "Which line of code creates a JSON object to contain the form data?",
+  "answers": [
+    {
+      "option": "server.form.getForm('newsletter');",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "server.forms.getForm('newsletter');",
+      "correct": true,
+      "isSelected": false
+    },
+    {
+      "option": "server.form.getForm('dwfrm_newsletter');",
+      "correct": false,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"197": {
+  "approach": "A merchant wants customers to be able to order gift vouchers via their site. Since they can issue an unlimited number of these dlgltal vouchers, this Item should be available to sell at all times",
+  "options": [],
+  "question": "How can a developer use Business Manager to ensure that the gift vouchers are always available?",
+  "answers": [
+    {
+      "option": "Check the perpetual flag in the product inventory record.",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "Set Stockl_evel = mexAllocation for the product",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "Manually set the inventory to a high number",
+      "correct": true,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"198": {
+  "approach": "A developer wants to edd a link to the My Account page",
+  "options": [],
+  "question": "Whet Is the correct code to accomplish this?",
+  "answers": [
+    {
+      "option": "<a href='${URLUtils.url('Account-Show')}>${Resource.msg('myaccount','account',request.locale())}</a>",
+      "correct": true,
+      "isSelected": false
+    },  
+    {
+      "option": "<a href='${URLUtils('Account-Show')}>ResourceMgr.getProperties('myaccount','account'</a>",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "<a href='${URLUtils.get('Account-Show')}>${Resource.msg('myaccount','account',request.locale())}</a>",
+      "correct": false,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"199": {
+  "approach": "",
+  "options": [],
+  "question": "Given template rendered by a controller with caching and a remote include without caching, which situation applies?",
+  "answers": [
+    {
+      "option": "The remote include portion is not cached, but the rest of the page is cached",
+      "correct": true,
+      "isSelected": false
+    },  
+    {
+      "option": "The page Is cached only for returning customers because Of the remote Include",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "The page is not cached because the remote include introduces an uncached portion.",
+      "correct": false,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"200": {
+  "approach": "A merchant has content slot on page that currently displays products based on the top sellers for the current week. The merchant wants to change this functionality, They want to have the slot render a specific content asset so that the content experience is more personalized to the Visitors",
+  "options": [],
+  "question": "Which two actions are necessary to make this change?",
+  "answers": [
+    {
+      "option": "Change the rendering template in the slot configuration AND delete the existing content slot to create a new one.",
+      "correct": true,
+      "isSelected": false
+    },  
+    {
+      "option": "Change the content type AND change the rendering template in the slot configuration.",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "Change the default setting AND change the rendering template in the slot configuration",
+      "correct": false,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"201": {
+  "approach": "A developer is asked to improve a page's maintainability by reducing its code repetition",
+  "options": [],
+  "question": "Which technique should the developer implement to achieve this?",
+  "answers": [
+    {
+      "option": "Embed partial files using ISML expressions",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "Implement template decorators paired with replace tags",
+      "correct": true,
+      "isSelected": false
+    },
+    {
+      "option": "Require and render templates With <isscript> tags",
+      "correct": false,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"202": {
+  "approach": "A client has a requirement to allow users on the Storefront to filter by a newly created attribute",
+  "options": [],
+  "question": "After creating the search refinement, What else is necessary to achieve this?",
+  "answers": [
+    {
+      "option": "Change the productSearchRefinementbar template",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "Set the attribute as Searchable",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "Ensure the attribute has date and is indexed",
+      "correct": true,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"203": {
+  "approach": "Business Manager has the configuration:",
+  "options": ["•	Active Log category is 'root'", "•	Log level of WARN"],
+  "question": "The code below is executing: var log —  Logger.getLogger('products') using this information, What Will be written to the log",
+  "answers": [
+    {
+      "option": "log.info('This is warn message')",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "log.error('This is warn message') AND log.info('This is info message')",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "log.warn('This is warn message') AND log.warn('This is warn message')",
+      "correct": true,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"204": {
+  "approach": "Given the following snippet: Server.append( ‘Show’ , function (req, res, next) )",
+  "options": [],
+  "question": "According to SFRA, which two optionsshows a correct way to complete the code above in order to provide data to the response using a controller? Choose 2 answers",
+  "answers": [
+    {
+      "option": "res.viewData = {data: myDataObject};res.render(‘/content/myPage’);next();})",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "res.setViewData ({data: myDataObject});res.render(‘/content/myPage’);next();});",
+      "correct": true,
+      "isSelected": false
+    },
+    {
+      "option": "res.render(‘/content/myPage’,{data: myDataObject});next();})",
+      "correct": true,
+      "isSelected": false
+    },
+    {
+      "option": "res.render(‘/content/myPage’);next();}).append{(Data:myDataObject});",
+      "correct": true,
+      "isSelected": false
+    },
+  ],
+  "isAnswered": false,
+  "isMultiple": true
+},
+"205": {
+  "approach": "",
+  "options": [],
+  "question": "Which of these situations is an appropriate use of the E2C Commerce Open Commerce APIs (OCAPIs)?",
+  "answers": [
+    {
+      "option": "Showing the customer's information in their B2C Commerce 'My Account' page",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "Extending System Object Type deflnltlons with new attributes",
+      "correct": true,
+      "isSelected": false
+    },
+    {
+      "option": "updating inventory information from a warehouse management software",
+      "correct": true,
+      "isSelected": false
+    }    
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"206": {
+  "approach": "A merchant has a new requirement to accept American Express credit cards on Storefront, A credit card payment method already exists.",
+  "options": [],
+  "question": "Which Step must a developer take in Business Manager to achieve this?",
+  "answers": [
+    {
+      "option": "Payment Processor, create American Express as a payment type",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "In Payment Methods, enable American Express as a credit card type",
+      "correct": true,
+      "isSelected": false
+    },
+    {
+      "option": "In Site Preferences, add American Express es a Payment Preference.",
+      "correct": false,
+      "isSelected": false
+    }    
   ],
   "isAnswered": false,
   "isMultiple": false
