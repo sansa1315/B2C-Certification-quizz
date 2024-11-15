@@ -33,8 +33,8 @@ let questions ={
         question : "Which step should the developer perform as part of the solution to achieve the requirements?",
         answers:[
             {option : "Create a new set-of-string type custom attribute to the system object type Profile to save all the SKUs and use the existing email field for the email.", correct: false, isSelected:false},
-            {option : "Create a new set-of-string type custom attribute to the system object type Product to save all the customer email addresses for back-in-stock notification.", correct: false, isSelected:false},
-            {option : "Create a new custom object type that has a set-of-string type custom attribute for the SKUs and a string for the email field.", correct: true, isSelected:false},
+            {option : "Create a new set-of-string type custom attribute to the system object type Product to save all the customer email addresses for back-in-stock notification.", correct: true, isSelected:false},
+            {option : "Create a new custom object type that has a set-of-string type custom attribute for the SKUs and a string for the email field.", correct: false, isSelected:false},
         ],
         "isAnswered": false,
 "isMultiple" : false
@@ -240,7 +240,7 @@ let questions ={
     18 : {
         approach: "A developer implements an Open Commerce API call to add products to a basket. Given the following resource configuration:",
         options: [
-            "{resource_id: /baskets/**, methods: [get], read_attributes}"
+            "{'resource_id': /baskets/**, 'methods': ['get'], 'read_attributes': '(**)', 'write_attributes': '(**)'}"
         ],
         question : "Which modification allows the requests to successfully execute?",
         answers:[
@@ -2652,12 +2652,12 @@ let questions ={
         },
         {
           "option": "Increase the web service time out.",
-          "correct": true,
+          "correct": false,
           "isSelected": false
         },
         {
           "option": "Update the external service to have a faster response time.",
-          "correct": false,
+          "correct": true,
           "isSelected": false
         }                                                      
       ],
@@ -3677,7 +3677,7 @@ let questions ={
     },
     {
       "option": "Apple Pay",
-      "correct": true,
+      "correct": false,
       "isSelected": false
     }
   ],
@@ -3970,9 +3970,9 @@ let questions ={
   "isMultiple": false
 },
 "157": {
-  "approach": "",
-  "options": [],
-  "question": "Given the customer basket described below: • A customer has an existing basket that consists of multiple items. • One of the items is identified as a gift ítem by an attribute at the product line ítem. The developer needs to write custom code to fetch the customer basket and then modify the basket based upon the items in the cart. If the basket contains any gift items, modify the basket and create a separate shipment for the gift item. Four hooks are required to make the modification, beginning with modifyGETRespone and ending with validatebasket. • Dw.ocapi.shop.basket.modifyGETResponse • -- missing hook – • -- missing hook -- • dw.ocapi.shop.basket.validateBasket. What are the two missing hooks in the middle?",
+  "approach": "Given the customer basket described below:",
+  "options": ["• A customer has an existing basket that consists of multiple items.", " • One of the items is identified as a gift ítem by an attribute at the product line ítem."],
+  "question": " The developer needs to write custom code to fetch the customer basket and then modify the basket based upon the items in the cart. If the basket contains any gift items, modify the basket and create a separate shipment for the gift item. Four hooks are required to make the modification, beginning with modifyGETRespone and ending with validatebasket. \n • Dw.ocapi.shop.basket.modifyGETResponse \n • -- missing hook – • -- missing hook -- \n• dw.ocapi.shop.basket.validateBasket. What are the two missing hooks in the middle?",
   "answers": [
     {
       "option": "dw.ocapi.shop.basket.shipment.afterDELETE",
@@ -4416,7 +4416,7 @@ let questions ={
     },
     {
       "option": "Add the appropiate roles and permission to the user to view the business manager extension",
-      "correct": true,
+      "correct": false,
       "isSelected": false
     },
     {
@@ -4426,7 +4426,7 @@ let questions ={
     },
     {
       "option": "Activate a new code version for the Business Manager Site",
-      "correct": false,
+      "correct": true,
       "isSelected": false
     }
   ],
@@ -5249,7 +5249,7 @@ let questions ={
       "isSelected": false
     },
     {
-      "option": "log.warn('This is warn message') AND log.warn('This is warn message')",
+      "option": "log.warn('This is warn message') AND log.info('This is warn message')",
       "correct": true,
       "isSelected": false
     },
@@ -5333,7 +5333,403 @@ let questions ={
   ],
   "isAnswered": false,
   "isMultiple": false
-}
+},
+"207": {
+  "approach": "In Log Center, developer notes a number of Cross Site Request Forgery (CSRF) log entries",
+  "options": [],
+  "question": "After adding the token In the ISML template, Which action might solve this problem?",
+  "answers": [
+    {
+      "option": "Delete the existing CSRF allow list In Susiness Manager.",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "Extend the CSRF token validity to avoid timeouts",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "Add csrfprotection middleware Steps in the controller.",
+      "correct": true,
+      "isSelected": false
+    }    
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"208": {
+  "approach": "In order to implement site custom functionality, a developer creates a new cartridge.",
+  "options": [],
+  "question": "Which step should the developer take to ensure their cartridge changes take effect?",
+  "answers": [
+    {
+      "option": "Delete the existing CSRF allow list In Susiness Manager.",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "Add the new cartridge to the cartridge path for the Business Manager site.",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "Add the new cartridge to the cartridge path for the relevant Storefront site",
+      "correct": true,
+      "isSelected": false
+    }    
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"209": {
+  "approach": "A developer is writing server side script that needs to maintain state across calls. The persistent information needed includes these Items.",
+  "options": ["•	The current customer", "•	Whether or not the customer is authenticated", "•	The privacy attributes (such as tracking consent or cookie policy)."],
+  "question": "Which technique should the developer use to maintain state in an efficient and scalable manner that follows best practice?",
+  "answers": [
+    {
+      "option": "use the Session class, and its additional class references and attributes, in the 32C Commerce",
+      "correct": true,
+      "isSelected": false
+    },  
+    {
+      "option": "use a client-side cookie to store the information for the session duration",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "use an SERA controller. Because It runs server-side, the state is automatically maintained",
+      "correct": false,
+      "isSelected": false
+    }    
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"210": {
+  "approach": "Given Newslettersubscription custom object that has e key attribute named email of type String, what is the correct syntax to create the Newslettersubscrlptlon custom object?",
+  "options": [],
+  "question": "",
+  "answers": [
+    {
+      "option": " Var customobject = dw.object.CustomObjectMgr.createNewsletterSubscription('email', newsLetterForm.email.value);",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": " Var customobject = dw.object.CustomObjectMgr. createCustomObject('NewsletterSubscription', newsLetterForm.email.value);",
+      "correct": true,
+      "isSelected": false
+    },
+    {
+      "option": " Var customobject = dw.object.CustomObjectMgr.createCustomObject(newsletterForm.email.value, 'NewsletterSubscription');",
+      "correct": false,
+      "isSelected": false
+    }    
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"211": {
+  "approach": "A developer is implementing new Page Designer content on a merchant's Storefront and adds the line below to the setupContentSearch function in the searchHelpers.Js file.",
+  "options": [],
+  "question": "What does this achieve?",
+  "answers": [
+    {
+      "option": "Enables searching to find Page Designer content assets that are not in folders",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "Prevents Page Designer pages and components from being searchable",
+      "correct": true,
+      "isSelected": false
+    },
+    {
+      "option": "Filters Page Designer search results into separate page and component folders",
+      "correct": false,
+      "isSelected": false
+    }    
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"212": {
+  "approach": "A developer is implementing new Page Designer content on a merchant's Storefront and adds the line below to the setupContentSearch function in the searchHelpers.Js file.",
+  "options": [],
+  "question": "What does this achieve?",
+  "answers": [
+    {
+      "option": "Enables searching to find Page Designer content assets that are not in folders",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "Prevents Page Designer pages and components from being searchable",
+      "correct": true,
+      "isSelected": false
+    },
+    {
+      "option": "Filters Page Designer search results into separate page and component folders",
+      "correct": false,
+      "isSelected": false
+    }    
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"213": {
+  "approach": "A developer uses the call() instance method of dw.svc.Service to invoke a web service and implemented the callback methods defined by ",
+  "options": [],
+  "question": "Which callback method is required only when invoking a SOAP service?",
+  "answers": [
+    {
+      "option": "createRequest",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "initServiceClient",
+      "correct": true,
+      "isSelected": false
+    },
+    {
+      "option": "mockCall",
+      "correct": false,
+      "isSelected": false
+    }    
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"214": {
+  "approach": "Given the SFRA controller below",
+  "options": [],
+  "question": "Why would a JavaScript debugger, Which is stopped at line 06, fail to show the viewData variable in the inspection tool?",
+  "answers": [
+    {
+      "option": "cache. applyDefauItCache is not a valid middleware",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "viewdata is declared but not assigned.",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "viewdata is assigned but not declared.",
+      "correct": true,
+      "isSelected": false
+    }    
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"215": {
+  "approach": "The client provides the system integrator with translation messages for the newly added 'French' ('fr') locale.",
+  "options": [],
+  "question": "What is the correct folder to store the associated .properties files?",
+  "answers": [
+    {
+      "option": "cartridge/templates/resources/fr",
+      "correct": true,
+      "isSelected": false
+    },  
+    {
+      "option": "cartrldge/templates/resources ",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "cartridge/resources",
+      "correct": true,
+      "isSelected": false
+    }    
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"216": {
+  "approach": "Multiple shoppers report slow performance on the product Detalls page.",
+  "options": [],
+  "question": "Which tool can a developer use to view average response times for the product-detail controller route?",
+  "answers": [
+    {
+      "option": "Request Logs",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "Pipeline Profiler",
+      "correct": true,
+      "isSelected": false
+    },
+    {
+      "option": "URL Request Analyzer",
+      "correct": true,
+      "isSelected": false
+    }    
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"217": {
+  "approach": "A merchant uploads an Image using the Content Image upload module Of Business Manager.",
+  "options": [],
+  "question": "Which module should the merchant use to display the image on the Storefront? Choose 3 answers",
+  "answers": [
+    {
+      "option": "ISML template",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "Content Asset",
+      "correct": true,
+      "isSelected": false
+    },
+    {
+      "option": "Storefront catalog",
+      "correct": true,
+      "isSelected": false
+    },    
+    {
+      "option": "Content slot",
+      "correct": true,
+      "isSelected": false
+    },    
+    {
+      "option": "Payment types",
+      "correct": false,
+      "isSelected": false
+    }    
+  ],
+  "isAnswered": false,
+  "isMultiple": true
+},
+"218": {
+  "approach": "Which is an appropriate use of <isif> the ISML tag that follows B2C Commerce and SFRA best practices?",
+  "options": [],
+  "question": "",
+  "answers": [
+    {
+      "option": "Implement Involved business loglc through conditional statements",
+      "correct": true,
+      "isSelected": false
+    },  
+    {
+      "option": "Display a section Of the page to logged users only",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "Redirect users to the registration page If they are not logged in.",
+      "correct": false,
+      "isSelected": false
+    }           
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"219": {
+  "approach": "Reference the following code snippets that allow a form to function correctly",
+  "options": [],
+  "question": "Which code should a developer insert at the EXPRESSION placeholder in the isml template snippet above to have the form work as expected",
+  "answers": [
+    {
+      "option": "newsLetterForm",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "pdict.newsLetterForm",
+      "correct": true,
+      "isSelected": false
+    },
+    {
+      "option": "pdict.newsLetter",
+      "correct": false,
+      "isSelected": false
+    }           
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"220": {
+  "approach": "A merchant has asked their development team to add a new site",
+  "options": [],
+  "question": "Which task is essential for correct site configuration prior to launch?",
+  "answers": [
+    {
+      "option": "Assign a default payment processor.",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "Assign default payment method",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "Assign default currency",
+      "correct": true,
+      "isSelected": false
+    }           
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"221": {
+  "approach": "A developer has a requirement to add a new field to the IN registration form that must not appear in the U.S. one",
+  "options": [],
+  "question": "Which path should the Developer create to accomplish this requirement?",
+  "answers": [
+    {
+      "option": "cartridge/forms/en_IN/profile.xml",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "cartridge/forms/profile_en_IN.xml",
+      "correct": true,
+      "isSelected": false
+    },
+    {
+      "option": "cartridge/forms/profile_ln.xml",
+      "correct": true,
+      "isSelected": false
+    }           
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+"222": {
+  "approach": "A developer wants to embed a l'nk to a content page from within the body Of another content asset. The target content asset ID is: about-us",
+  "options": [],
+  "question": "Which option represents the correct format to use?",
+  "answers": [
+    {
+      "option": "$url('Page-Show', 'cid', 'about-us')$",
+      "correct": false,
+      "isSelected": false
+    },  
+    {
+      "option": "$url('Content-page', 'cid', 'about-us')$",
+      "correct": false,
+      "isSelected": false
+    },
+    {
+      "option": "$url('Content-Show', 'cid', 'about-us')$",
+      "correct": true,
+      "isSelected": false
+    }           
+  ],
+  "isAnswered": false,
+  "isMultiple": false
+},
+
+
 
 
 
