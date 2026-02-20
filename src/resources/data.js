@@ -385,7 +385,7 @@ let questions ={
             {option : "Add model to a new custom object with localizable attributes", correct: false, isSelected:false},
         ],
         "isAnswered": false,
-"isMultiple" : false
+"isMultiple" : true
     },
     28:{
         approach: "A Digital Developer must resolve a performance issue with product tiles. The Developer determines that the product tiles are NOT being cached for a long enough period.",
@@ -433,7 +433,7 @@ let questions ={
             {option : "Use the Business Manager Data Replication module to replicate the catalog from the original Developer's sandbox", correct: false, isSelected:false},
         ],
         "isAnswered": false,
-"isMultiple" : false
+"isMultiple" : true
     },
     31:{
         approach: "Given the file structure below, which ISML method call renders the customLandingPage template? content/custom/customLandingPage.isml",
@@ -653,7 +653,7 @@ let questions ={
         ],
         question : "What is the correct syntax to define hooks in <code>package.json</code> file in order to configure functionality to be called at a specific point in your application flow or at a specific event?",
         answers:[
-            {option : "{\"hooks\": \"./cartridge/scripts/hooks.json\"}", correct: true, isSelected:false},
+            {option : "{\"hooks\": \"./cartridge/scripts/hooks.json\"}", correct: false, isSelected:false},
             {option : "{\"hooks\": {\"name\":\"dw.ocapi.shop.basket.calculate\", \"script\":\"./hooks\"}}", correct: false, isSelected:false},
             {option : "A and B are both correct.", correct: true, isSelected:false},
             {option : "You can't define hooks. This functionality cannot be extended and its purpose it's just for OCAPI.", correct: false, isSelected:false},
@@ -1317,14 +1317,9 @@ let questions ={
         },
         {
           "option": "A and B are correct.",
-          "correct": false,
-          "isSelected": false
-        },
-        {
-          "option": "All answers are incorrect.",
           "correct": true,
           "isSelected": false
-        }
+        },
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2243,7 +2238,7 @@ let questions ={
           "option": "Logger.error(‘Unable to find Apple Pay payment instrument for order.‘+paymentInstruments);",
           "correct": true,
           "isSelected": false
-        }        
+        }
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2272,12 +2267,12 @@ let questions ={
           "option": "Use inline Javascript.",
           "correct": true,
           "isSelected": false
-        },        
+        },
         {
           "option": "Combine several images into a single image.",
-          "correct": true,
+          "correct": false,
           "isSelected": false
-        }        
+        }
       ],
       "isAnswered": false,
       "isMultiple" : true
@@ -2306,7 +2301,7 @@ let questions ={
           "option": "Logger.getLogger(‘profile’).debug('Error retrieving profile email, Status Code: {0} was returned.', http.statusCode)",
           "correct": true,
           "isSelected": false
-        }                       
+        }
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2335,12 +2330,12 @@ let questions ={
           "option": "Folders",
           "correct": true,
           "isSelected": false
-        },                       
+        },
         {
           "option": "Content assets",
           "correct": true,
           "isSelected": false
-        }                       
+        }
       ],
       "isAnswered": false,
       "isMultiple" : true
@@ -2369,7 +2364,7 @@ let questions ={
           "option": "The CSRF settings in Business Manager are properly configured.",
           "correct": false,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2398,7 +2393,7 @@ let questions ={
           "option": "Use WebDAV Client to retrieve products.",
           "correct": false,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2427,7 +2422,7 @@ let questions ={
           "option": "Content slot variable",
           "correct": false,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": false,
       "isMultiple" : true
@@ -2456,7 +2451,7 @@ let questions ={
           "option": "Print all values in the script node called before the current script.",
           "correct": false,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2485,7 +2480,7 @@ let questions ={
           "option": "Right-click on the component in UX Studio and view the caching properties of the file",
           "correct": false,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2514,7 +2509,7 @@ let questions ={
           "option": "https://www.test.com/dw/shop/v18_3/products/M1355?client_id=aaa.",
           "correct": false,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2543,7 +2538,7 @@ let questions ={
           "option": "Option D",
           "correct": false,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2572,7 +2567,7 @@ let questions ={
           "option": "dw.ocapi.shop.order.afterPOST",
           "correct": false,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2601,7 +2596,7 @@ let questions ={
           "option": "Use the Site Import & Export module to export the master catalog, filtered by site catalog categories to export specific products.",
           "correct": false,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2630,7 +2625,7 @@ let questions ={
           "option": "require () method",
           "correct": true,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2659,7 +2654,7 @@ let questions ={
           "option": "Update the external service to have a faster response time.",
           "correct": true,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": false,
       "isMultiple" : true
@@ -2688,7 +2683,7 @@ let questions ={
           "option": "Use asynchronous import or export jobs.",
           "correct": false,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": true,
 "isMultiple" : false
@@ -2717,7 +2712,7 @@ let questions ={
           "option": "Create an inventory record with Backorder Handling enabled.",
           "correct": false,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2746,7 +2741,7 @@ let questions ={
           "option": "Store the region code value in the geolocation system attribute of the Order.",
           "correct": false,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2775,7 +2770,7 @@ let questions ={
           "option": "Include an authentication token in the request.",
           "correct": false,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2804,7 +2799,7 @@ let questions ={
           "option": "Use the setTimeout method to execute fallback code if the request has NOT completed.",
           "correct": false,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2833,7 +2828,7 @@ let questions ={
           "option": "Set the server connection’s target version directory to the active code version.",
           "correct": true,
           "isSelected": false
-        }                                                      
+        }
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2842,7 +2837,7 @@ let questions ={
       "approach": "A Digital Developer is implementing an Open Commerce API call to add products to a basket. Given the following resource configuration:",
       "options": [],
       "question": "Which modification allows the requests to successfully execute?",
-      "answers": [        
+      "answers": [
         {
           "option": "Change the 'resource_id' value to: '/baskets/*/items'.",
           "correct": false,
@@ -2862,7 +2857,7 @@ let questions ={
           "option": "Change the 'methods' value to: ['get', 'post'].",
           "correct": true,
           "isSelected": false
-        },                                                      
+        },
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2871,7 +2866,7 @@ let questions ={
       "approach": "",
       "options": [],
       "question": "Which two methods are efficient and scalable? (Choose two.)",
-      "answers": [        
+      "answers": [
         {
           "option": "ProductMgr.queryAllSiteProducts()",
           "correct": true,
@@ -2891,7 +2886,7 @@ let questions ={
           "option": "Category.getProducts()",
           "correct": false,
           "isSelected": false
-        },                                                      
+        },
       ],
       "isAnswered": false,
       "isMultiple" : true
@@ -2900,7 +2895,7 @@ let questions ={
       "approach": "Universal Containers calls the following combination of products “The Basics” and sells the combination as a unique product ID:",
       "options": [],
       "question": "The Developer created these three products in the catalog. What is the next step in Business Manager to create “The Basics” as a combination?",
-      "answers": [        
+      "answers": [
         {
           "option": " In the Product Bundles module, create a bundle named “The Basics”.",
           "correct": false,
@@ -2920,7 +2915,7 @@ let questions ={
           "option": "In the Product Sets module, create a product set named “The Basics”.",
           "correct": false,
           "isSelected": false
-        },                                                      
+        },
       ],
       "isAnswered": false,
 "isMultiple" : false
@@ -2929,7 +2924,7 @@ let questions ={
       "approach": "",
       "options": [],
       "question": "A Digital Developer extends a system object, Product, and adds a Boolean attribute, “sellable,” to it. Assuming “prod” is the variable name handling the product, what code can the Developer use to access it?",
-      "answers": [        
+      "answers": [
         {
           "option": "prod.extended.sellable",
           "correct": false,
@@ -2949,7 +2944,7 @@ let questions ={
           "option": "prod.custom.sellable",
           "correct": true,
           "isSelected": false
-        },                                                      
+        },
       ],
       "isAnswered": false,
       "isMultiple" : false
@@ -2958,7 +2953,7 @@ let questions ={
       "approach": "",
       "options": [],
       "question": "A Digital Developer is tasked with setting up a new Digital Server Connection using UX Studio in their sandbox. Which three items are required to accomplish this task? (Choose three.)",
-      "answers": [        
+      "answers": [
         {
           "option": "Instance Version",
           "correct": false,
@@ -2976,14 +2971,14 @@ let questions ={
         },
         {
           "option": "Keystore Password",
-          "correct": true,
+          "correct": false,
           "isSelected": false
-        },                                                      
+        },
         {
           "option": "Business Manager Password",
           "correct": true,
           "isSelected": false
-        },                                                      
+        },
       ],
       "isAnswered": false,
       "isMultiple" : true
@@ -2992,7 +2987,7 @@ let questions ={
       "approach": "A Digital Developer adds the following line of code to a script.",
       "options": [],
       "question": "The code executes without error; however, the log file on disk does NOT contain the log message. Which two actions should be completed to write the log message to disk? (Choose two.)",
-      "answers": [        
+      "answers": [
         {
           "option": " Ensure that the debug log level is enabled to write to file in the Custom Log Settings Business Manager module.",
           "correct": true,
@@ -3012,7 +3007,7 @@ let questions ={
           "option": "Ensure that the debug log level has been added to the custom log level types in the Global Preferences business manager module.",
           "correct": false,
           "isSelected": false
-        },                                                      
+        },
       ],
       "isAnswered": false,
       "isMultiple" : true
@@ -3021,7 +3016,7 @@ let questions ={
       "approach": "",
       "options": [],
       "question": "Which technical reports datapoint measures the performance of a controller’s script execution if network factors and Web Adaptor processing is ignored?",
-      "answers": [        
+      "answers": [
         {
           "option": "Processing time",
           "correct": false,
@@ -3041,7 +3036,7 @@ let questions ={
           "option": "Response time",
           "correct": false,
           "isSelected": false
-        },                                                      
+        },
       ],
       "isAnswered": false,
       "isMultiple" : false
@@ -3050,7 +3045,7 @@ let questions ={
       "approach": "",
       "options": [],
       "question": "Which technical reports datapoint measures the performance of a controller’s script execution if network factors and Web Adaptor processing is ignored?",
-      "answers": [        
+      "answers": [
         {
           "option": "Processing time",
           "correct": false,
@@ -3070,7 +3065,7 @@ let questions ={
           "option": "Response time",
           "correct": false,
           "isSelected": false
-        },                                                      
+        },
       ],
       "isAnswered": false,
       "isMultiple" : false
@@ -3732,7 +3727,7 @@ let questions ={
       "option": "req.next();",
       "correct": false,
       "isSelected": false
-    }    
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -4858,7 +4853,7 @@ let questions ={
       "option": "Order failure information",
       "correct": true,
       "isSelected": false
-    },  
+    },
     {
       "option": "Transaction's credit card information",
       "correct": false,
@@ -4882,7 +4877,7 @@ let questions ={
       "option": "Append a new function to all the existing routes with the server module",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "Define a new middleware function and use it In the exlstlng routes.",
       "correct": true,
@@ -4906,7 +4901,7 @@ let questions ={
       "option": "Create a servlce and e Sltepreference that Induce the service to respond With a mock response using a conditional.",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "Create a service and implement the mockFuII callback and a sitepreference to enable or disable the mock response.",
       "correct": false,
@@ -4930,7 +4925,7 @@ let questions ={
       "option": "Allows external applications to create coupons",
       "correct": true,
       "isSelected": false
-    },  
+    },
     {
       "option": "Allows external applications to create, update, and delete coupons",
       "correct": false,
@@ -4954,7 +4949,7 @@ let questions ={
       "option": "It defines the business and rendering logic Of the component required by the merchant",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "It defines the responsive layout of the rendered template",
       "correct": false,
@@ -4978,7 +4973,7 @@ let questions ={
       "option": "Append Cart-Show controller route in the client cartridge and add dataLeyer object to the vlewData variable",
       "correct": true,
       "isSelected": false
-    },  
+    },
     {
       "option": "Replace the Cart-Show controller route in client cartridge ane add datal-Byer Object to the viewData variable. Ensure that the client cartridge is on the left of the LINK cartridge in cartridge path",
       "correct": false,
@@ -5002,7 +4997,7 @@ let questions ={
       "option": "The categories are not sorted",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "The Storefront catalog Is offline",
       "correct": false,
@@ -5026,7 +5021,7 @@ let questions ={
       "option": "Set the logging global preference to true AND check the box for Info under Log Files. ",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "Set the logging global preference to true AND set the root log level to debug",
       "correct": false,
@@ -5050,7 +5045,7 @@ let questions ={
       "option": "Extend the code In cartridge/models/shi pping/sh ipping Meth js using module.superModuIe and add an exception for the specified brand.",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "Extend the CheckoutShippingServices controller using module-super-Module and add an exception for the speclfled brand,",
       "correct": false,
@@ -5074,7 +5069,7 @@ let questions ={
       "option": "server.form.getForm('newsletter');",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "server.forms.getForm('newsletter');",
       "correct": true,
@@ -5098,7 +5093,7 @@ let questions ={
       "option": "Check the perpetual flag in the product inventory record.",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "Set Stockl_evel = mexAllocation for the product",
       "correct": false,
@@ -5122,7 +5117,7 @@ let questions ={
       "option": "<a href='${URLUtils.url('Account-Show')}>${Resource.msg('myaccount','account',request.locale())}</a>",
       "correct": true,
       "isSelected": false
-    },  
+    },
     {
       "option": "<a href='${URLUtils('Account-Show')}>ResourceMgr.getProperties('myaccount','account'</a>",
       "correct": false,
@@ -5146,7 +5141,7 @@ let questions ={
       "option": "The remote include portion is not cached, but the rest of the page is cached",
       "correct": true,
       "isSelected": false
-    },  
+    },
     {
       "option": "The page Is cached only for returning customers because Of the remote Include",
       "correct": false,
@@ -5170,7 +5165,7 @@ let questions ={
       "option": "Change the rendering template in the slot configuration AND delete the existing content slot to create a new one.",
       "correct": true,
       "isSelected": false
-    },  
+    },
     {
       "option": "Change the content type AND change the rendering template in the slot configuration.",
       "correct": false,
@@ -5194,7 +5189,7 @@ let questions ={
       "option": "Embed partial files using ISML expressions",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "Implement template decorators paired with replace tags",
       "correct": true,
@@ -5218,7 +5213,7 @@ let questions ={
       "option": "Change the productSearchRefinementbar template",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "Set the attribute as Searchable",
       "correct": false,
@@ -5242,7 +5237,7 @@ let questions ={
       "option": "log.info('This is warn message')",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "log.error('This is warn message') AND log.info('This is info message')",
       "correct": false,
@@ -5266,7 +5261,7 @@ let questions ={
       "option": "res.viewData = {data: myDataObject};res.render(‘/content/myPage’);next();})",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "res.setViewData ({data: myDataObject});res.render(‘/content/myPage’);next();});",
       "correct": true,
@@ -5295,7 +5290,7 @@ let questions ={
       "option": "Showing the customer's information in their B2C Commerce 'My Account' page",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "Extending System Object Type deflnltlons with new attributes",
       "correct": true,
@@ -5305,7 +5300,7 @@ let questions ={
       "option": "updating inventory information from a warehouse management software",
       "correct": true,
       "isSelected": false
-    }    
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5319,7 +5314,7 @@ let questions ={
       "option": "Payment Processor, create American Express as a payment type",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "In Payment Methods, enable American Express as a credit card type",
       "correct": true,
@@ -5329,7 +5324,7 @@ let questions ={
       "option": "In Site Preferences, add American Express es a Payment Preference.",
       "correct": false,
       "isSelected": false
-    }    
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5343,7 +5338,7 @@ let questions ={
       "option": "Delete the existing CSRF allow list In Susiness Manager.",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "Extend the CSRF token validity to avoid timeouts",
       "correct": false,
@@ -5353,7 +5348,7 @@ let questions ={
       "option": "Add csrfprotection middleware Steps in the controller.",
       "correct": true,
       "isSelected": false
-    }    
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5367,7 +5362,7 @@ let questions ={
       "option": "Delete the existing CSRF allow list In Susiness Manager.",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "Add the new cartridge to the cartridge path for the Business Manager site.",
       "correct": false,
@@ -5377,7 +5372,7 @@ let questions ={
       "option": "Add the new cartridge to the cartridge path for the relevant Storefront site",
       "correct": true,
       "isSelected": false
-    }    
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5391,7 +5386,7 @@ let questions ={
       "option": "use the Session class, and its additional class references and attributes, in the 32C Commerce",
       "correct": true,
       "isSelected": false
-    },  
+    },
     {
       "option": "use a client-side cookie to store the information for the session duration",
       "correct": false,
@@ -5401,7 +5396,7 @@ let questions ={
       "option": "use an SERA controller. Because It runs server-side, the state is automatically maintained",
       "correct": false,
       "isSelected": false
-    }    
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5415,7 +5410,7 @@ let questions ={
       "option": " Var customobject = dw.object.CustomObjectMgr.createNewsletterSubscription('email', newsLetterForm.email.value);",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": " Var customobject = dw.object.CustomObjectMgr. createCustomObject('NewsletterSubscription', newsLetterForm.email.value);",
       "correct": true,
@@ -5425,7 +5420,7 @@ let questions ={
       "option": " Var customobject = dw.object.CustomObjectMgr.createCustomObject(newsletterForm.email.value, 'NewsletterSubscription');",
       "correct": false,
       "isSelected": false
-    }    
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5439,7 +5434,7 @@ let questions ={
       "option": "Enables searching to find Page Designer content assets that are not in folders",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "Prevents Page Designer pages and components from being searchable",
       "correct": true,
@@ -5449,7 +5444,7 @@ let questions ={
       "option": "Filters Page Designer search results into separate page and component folders",
       "correct": false,
       "isSelected": false
-    }    
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5463,7 +5458,7 @@ let questions ={
       "option": "Enables searching to find Page Designer content assets that are not in folders",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "Prevents Page Designer pages and components from being searchable",
       "correct": true,
@@ -5473,7 +5468,7 @@ let questions ={
       "option": "Filters Page Designer search results into separate page and component folders",
       "correct": false,
       "isSelected": false
-    }    
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5487,7 +5482,7 @@ let questions ={
       "option": "createRequest",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "initServiceClient",
       "correct": true,
@@ -5497,7 +5492,7 @@ let questions ={
       "option": "mockCall",
       "correct": false,
       "isSelected": false
-    }    
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5511,7 +5506,7 @@ let questions ={
       "option": "cache. applyDefauItCache is not a valid middleware",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "viewdata is declared but not assigned.",
       "correct": false,
@@ -5521,7 +5516,7 @@ let questions ={
       "option": "viewdata is assigned but not declared.",
       "correct": true,
       "isSelected": false
-    }    
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5535,7 +5530,7 @@ let questions ={
       "option": "cartridge/templates/resources/fr",
       "correct": true,
       "isSelected": false
-    },  
+    },
     {
       "option": "cartrldge/templates/resources ",
       "correct": false,
@@ -5545,7 +5540,7 @@ let questions ={
       "option": "cartridge/resources",
       "correct": true,
       "isSelected": false
-    }    
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5559,7 +5554,7 @@ let questions ={
       "option": "Request Logs",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "Pipeline Profiler",
       "correct": true,
@@ -5569,7 +5564,7 @@ let questions ={
       "option": "URL Request Analyzer",
       "correct": true,
       "isSelected": false
-    }    
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5583,7 +5578,7 @@ let questions ={
       "option": "ISML template",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "Content Asset",
       "correct": true,
@@ -5593,17 +5588,17 @@ let questions ={
       "option": "Storefront catalog",
       "correct": true,
       "isSelected": false
-    },    
+    },
     {
       "option": "Content slot",
       "correct": true,
       "isSelected": false
-    },    
+    },
     {
       "option": "Payment types",
       "correct": false,
       "isSelected": false
-    }    
+    }
   ],
   "isAnswered": false,
   "isMultiple": true
@@ -5617,7 +5612,7 @@ let questions ={
       "option": "Implement Involved business loglc through conditional statements",
       "correct": true,
       "isSelected": false
-    },  
+    },
     {
       "option": "Display a section Of the page to logged users only",
       "correct": false,
@@ -5627,7 +5622,7 @@ let questions ={
       "option": "Redirect users to the registration page If they are not logged in.",
       "correct": false,
       "isSelected": false
-    }           
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5641,7 +5636,7 @@ let questions ={
       "option": "newsLetterForm",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "pdict.newsLetterForm",
       "correct": true,
@@ -5651,7 +5646,7 @@ let questions ={
       "option": "pdict.newsLetter",
       "correct": false,
       "isSelected": false
-    }           
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5665,7 +5660,7 @@ let questions ={
       "option": "Assign a default payment processor.",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "Assign default payment method",
       "correct": false,
@@ -5675,7 +5670,7 @@ let questions ={
       "option": "Assign default currency",
       "correct": true,
       "isSelected": false
-    }           
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5689,7 +5684,7 @@ let questions ={
       "option": "cartridge/forms/en_IN/profile.xml",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "cartridge/forms/profile_en_IN.xml",
       "correct": true,
@@ -5699,7 +5694,7 @@ let questions ={
       "option": "cartridge/forms/profile_ln.xml",
       "correct": true,
       "isSelected": false
-    }           
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5713,7 +5708,7 @@ let questions ={
       "option": "$url('Page-Show', 'cid', 'about-us')$",
       "correct": false,
       "isSelected": false
-    },  
+    },
     {
       "option": "$url('Content-page', 'cid', 'about-us')$",
       "correct": false,
@@ -5723,7 +5718,7 @@ let questions ={
       "option": "$url('Content-Show', 'cid', 'about-us')$",
       "correct": true,
       "isSelected": false
-    }           
+    }
   ],
   "isAnswered": false,
   "isMultiple": false
@@ -5739,4 +5734,3 @@ let questions ={
 export default  {questions}
 
 
-  
